@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danial-Heathcare clinic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our moto is to make everyone happy</h1>
+        <p>Stay Healtthy Live long</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+            <li><a href="#appointment">Appointments</a></li>
+            <li><a href="#about">About Danial-Heathcare</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <p>Let's see you are heavy !!!!</p>
+            
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter height in cm">
+            </div>
+            
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter weight in kg">
+            </div>
+            
+            <button id="calculate-bmi">Calculate BMI</button>
+            
+            <div id="bmi-result"></div>
+            
+            <div class="bmi-info">
+                <h3>BMI Categories:</h3>
+                <ul>
+                    <li><strong>Underweight:</strong> BMI less than 18.5</li>
+                    <li><strong>Normal weight:</strong> BMI 18.5–24.9</li>
+                    <li><strong>Overweight:</strong> BMI 25–29.9</li>
+                    <li><strong>Obese:</strong> BMI 30 or greater</li>
+                </ul>
+                <p class="note">Note: BMI is a screening tool but not a diagnostic of body fatness or health.</p>
+            </div>
+        </section>
+        
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <div class="input-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required placeholder="Your full name">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Your email">
+                </div>
+                
+                <div class="input-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required placeholder="Your phone number">
+                </div>
+                
+                <div class="input-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="preferred-date">Preferred Date:</label>
+                    <input type="date" id="preferred-date" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="reason">Reason for Visit:</label>
+                    <textarea id="reason" placeholder="We are glad you are here, tell us what you need"></textarea>
+                </div>
+                
+                <button type="submit">Request Appointment</button>
+            </form>
+        </section>
+        
+        <section id="clinic-info">
+            <h2>Our Clinic Information</h2>
+            <div class="info-grid">
+                <div>
+                    <h3>Location</h3>
+                    <p>Danial-Heathcare<br>Merrylands 2160 NSW</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Monday-Friday: 8:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+                <div>
+                    <h3>Emergency Contact</h3>
+                    <p>Phone: (0470646883)<br>
+                    After Hours: (0470646883)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Danial-Heathcare. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
